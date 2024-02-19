@@ -24,6 +24,29 @@ public class pantallaEjer {
 	constructorEmpresa empresa3 = new constructorEmpresa("Indra", "7454380n", new constructorTrabajador[4]);
 		
 	constructorEmpresa[] arrayEmpresas = new constructorEmpresa[]{empresa1, empresa2, empresa3};
+	
+	for(constructorEmpresa emp : arrayEmpresas)
+		System.out.println(trabajador1.toString());
+		System.out.println(trabajador2.toString());
+		System.out.println(trabajador3.toString());
+		System.out.println(empresa1.toString());
+		
+		System.out.println(trabajador1.valido());
+		System.out.println(trabajador3.valido());
+		System.out.println(trabajador1.sueldoMayor(trabajador2));
+		System.out.println(trabajador3.sueldoMayor(trabajador1));
+		System.out.println(trabajador1.esIgual(trabajador4));
+		System.out.println(trabajador3.esIgual(trabajador1));
+		System.out.println(empresa1.existeTrabajador("25283432G"));
+		System.out.println(empresa1.existeTrabajador("56835839M"));
+		System.out.println(empresa1.numeroTrabajadores());
+		System.out.println(empresa1.salarioTotal());
+		System.out.println(empresa1.mas3000());
+		System.out.println(empresa1.menosSMI());
+		System.out.println(empresa1.masCantidadParametro(11000));
+		System.out.println(empresa1.dniValido());
+		System.out.println(empresa1.esIgual(empresa2));
+		System.out.println(empresa1.esIgual(empresa3));
 
 	}
 }	
